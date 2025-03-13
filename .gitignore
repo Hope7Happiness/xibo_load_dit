@@ -1,0 +1,4 @@
+jax_models/
+torch_models/
+**/__pycache__/
+pretrained_models/

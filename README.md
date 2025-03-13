@@ -1,3 +1,26 @@
+# Load checkpoint
+
+conda env: `NNX`.
+
+- naive FM (w/o t): `jax_models/20250311_203603_y8zcr8_kmh-tpuvm-v2-32-1__b_lr_ep_eval_checkpoint_384000/`; torch is `torch_models/20250311_203603_y8zcr8_kmh-tpuvm-v2-32-1__b_lr_ep_eval_checkpoint_384000.pt`
+
+Script:
+
+```shell
+make run
+```
+
+This save to [sample.png](./sample.png)
+
+new checkpoints:
+
+```shell
+make convert
+```
+
+
+# The below is the original README
+
 ## Scalable Diffusion Models with Transformers (DiT)<br><sub>Official PyTorch Implementation</sub>
 
 ### [Paper](http://arxiv.org/abs/2212.09748) | [Project Page](https://www.wpeebles.com/DiT) | Run DiT-XL/2 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/wpeebles/DiT) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/facebookresearch/DiT/blob/main/run_DiT.ipynb) <a href="https://replicate.com/arielreplicate/scalable_diffusion_with_transformers"><img src="https://replicate.com/arielreplicate/scalable_diffusion_with_transformers/badge"></a>
